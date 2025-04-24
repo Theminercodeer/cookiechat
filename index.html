@@ -6,7 +6,7 @@
         <style>
             @media (max-width: 700px) {
                 #cb-border {
-                    width: 90px
+                    width: 90%
                 }
             }
             .CookieHeader p {
@@ -34,8 +34,11 @@
                 position: absolute;
                 width: 50%;
             }
-            #input-chat {
-
+            .input-chat {
+                border: 1px solid red;
+            }
+            .input-box {
+                width: 100px;
             }
         </style>
     </head>
@@ -43,10 +46,13 @@
         <div class="CookieHeader">
             <p>Cookie Chat</p>
         </div>
-        <div class="chat-box">
-            <div id="input-chat" id="cb-border">
+        <div class="chat-box" id="cb-border">
+        </div>
+        <div class="input-chat">
+            <div id="input-box">
+                <input type="text" size="50"><br><br>
             </div>
-            <input type="text"><br><br>
+            
         </div>
     </body>
 
