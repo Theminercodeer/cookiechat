@@ -4,6 +4,11 @@
         <title>Cookie Chat</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
+            @media (max-width: 700px) {
+                #cb-border {
+                    width: 90px
+                }
+            }
             .CookieHeader p {
                 font-size: 50px;
                 text-align: center;
@@ -39,7 +44,7 @@
             <p>Cookie Chat</p>
         </div>
         <div class="chat-box">
-            <div id="input-chat">
+            <div id="input-chat" id="cb-border">
                 <input type="text"><br><br>
             </div>
         </div>
