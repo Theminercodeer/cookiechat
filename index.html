@@ -3,6 +3,9 @@
     <head>
         <title>Cookie Chat</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
         <style>
             @media (max-width: 700px) {
                 #cb-border {
@@ -12,36 +15,63 @@
                     height: 60vh;
                 }
             }
+            @keyframes blue-an {
+                0% {color: aquamarine;}
+                25% {color: rgb(3, 173, 173);}
+                50% {color: aqua;}
+                100% {color: aquamarine;}
+            }
             body {
-                background-color: #210a3b;
+                background-image: linear-gradient(180deg, green, rgb(121, 68, 7))
             }
             .CookieHeader p {
                 font-size: 50px;
                 text-align: center;
                 padding: 0;
                 margin: 0;
-                color: yellow;
+                font-family: "Courgette", cursive;
+                animation-name: blue-an;
+                animation-duration: 10s;
+                animation-iteration-count: infinite;
             }
             .CookieHeader {
                 border: 2px;
-                background-color: darkblue;
+                background-color: rgb(51, 51, 51);
                 border-radius: 12px;
+                border-style: ridge;
             }
             .chat-box {
-                border: 2px solid black;
+                border: 3px solid black;
                 margin-top: 10px;
                 width: 50%;
                 height: 85vh;
                 margin-left: auto;
                 margin-right: auto;
                 border-radius: 20px;
-                background-color: #ffffff;
-            }
-            .input-chat {
-                border: 1px solid red;
+                background-color: #b3b3b3;
+                border-style: ridge;
             }
             .input-box {
-                margin: auto;
+                padding: 0;
+                padding-bottom: 3.5%; 
+            }
+            .input-chat {
+                padding-top: 0.1%;
+                width: 50%;
+                margin-left: auto;
+                margin-right: auto;
+                border: 4px solid transparent;
+                border-radius: 20px;
+                
+            }
+            input {
+                border-radius: 20px;
+                background-color: 6770F0;
+                height: 25px;
+                
+            }
+            #topb {
+                z-index: 100px;
             }
         </style>
     </head>
@@ -51,13 +81,16 @@
         </div>
         <div class="chat-box" id="cb-border">
         </div>
-        <div class="input-chat">
-            <div id="input-box">
-                <input type="text" size="50">
+        <div class="input-chat" id="topb">
+            <div class="input-box">
+                <input type="text" size="59">
             </div>
-            
         </div>
     </body>
+
+
+
+</html>
 
 
 
