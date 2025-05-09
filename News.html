@@ -15,41 +15,78 @@
             font-size: 2.1em;
             padding-bottom: 40px;
         }
-        #Progress-bar {
-            border: 2px solid black;
+        #Progress-happing {
+            padding: 0;
+            margin: 0;
+            border: 3px solid green;
+            text-align: center;
             border-radius: 10px;
+        }
+        #Progress-bar {
+            border: 4px solid black;
+            border-radius: 20px;
         }
         .Progress-bar-class {
             padding-top:;
-            border: 2px solid white;
+            border: 2px solid black;
+            z-index: 10;
         }
         #Progress {
             background-color: green;
             margin: 0;
             padding: 0;
-            border-radius: 5px;
-            width: 100%;
+            border-radius: 10px;
+            width: 0%;
+            
+        }
+        .left-s {
+            float: left;
+            padding: 0px 50px;
+
+        }
+
+        .p-row:after {
+            content: "";
+           display: table;
+           clear: both;
+           
         }
     </style>
     <body>
         <p id="News-p">News</p>
         <div class="Progress-bar-class">
-                    <p style="padding: 0; margin: 0; text-align: center; color: white;">Progress</p>
+                    <p style="padding: 0; margin: 0; text-align: center; color: blue; font-size: 1.4em;">Current Progress on Chat</p>
             <div id="Progress-bar">
                 <div id="Progress">
-                    <p style="padding: 0; margin: 0; border: 2px solid green; text-align: center; border-radius: 10px;">10%</p> 
+                    <p id="Progress-happing">0%</p> 
                 </div>
             </div>
-            <ul>
-                <li>Build Page</li>
-                    <bt>> Text Input</bt><br>
-                    <bt>> Display</bt><br>
-                    <bt>> Chat Bubbles</bt><br>
-                <li>Functions</li>
-                   <bt>> Placeholders<bt><br>
-                   <bt>> Display Output</bt><br>
-                   <bt>> Image Upload</bt><br>
-            </ul>
+            <div>
+            <div class="p-row">
+            <section class="left-s">
+                <ul>
+                    <li><b>Build Page</b></li>
+                        <bt>> Text Input <input type="checkbox" disabled></bt><br>
+                        <bt>> Display<input type="checkbox" disabled></bt><br>
+                        <bt>> Chat Bubbles<input type="checkbox" disabled></bt><br>
+                </ul>
+            </section>
+            <section class="left-s">
+                <ul>
+                    <li><b>Functions</b></li>
+                        <bt>> Placeholders<input type="checkbox" disabled><bt><br>
+                        <bt>> Display Output<input type="checkbox" disabled></bt><br>
+                        <bt>> Image Upload<input type="checkbox" disabled></bt><br>
+                </ul>
+            </section>
+                
+            </div>
+
+                
+            </div>
+
+
+                
         </div>
 
         
